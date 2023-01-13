@@ -26,7 +26,9 @@ const Login = () => {
         });
 
             const onSubmit = async formData => {
+
                 try{
+                    console.log('foi');
                     const {data} = await api.get(`users?email=${formData.email}&senha=${formData.password}`);
                     if(data.length === 1){
                         navigate('/feed')
@@ -35,8 +37,6 @@ const Login = () => {
                     alert('ERROR, favor comunicar ao suporte')
                 }
             };
-
-    
 
     return (<>
         <Header />
@@ -58,7 +58,7 @@ const Login = () => {
                 </form>
                 <Row>
                     <EsqueciText>Esqueci minha senha</EsqueciText>
-                    <CriarText>Criar Conta</CriarText>
+                    <CriarText href='CreateAcc'>Criar Conta</CriarText>
                 </Row>
                 </Wrapper>
             </Column>

@@ -3,13 +3,14 @@ import styled from 'styled-components';
 export const Container = styled.main`
     width: 100%;
     max-width: 80%;
+    height: 100vh;
     margin: 0 auto;
-    margin-top: 120px;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap: 100px;
 `
 
 export const Wrapper = styled.div`
@@ -58,20 +59,19 @@ export const SubtitleLogin = styled.p`
     font-size: 18px;
     line-height: 25px;
     margin-bottom: 35px;
+    margin-top: 25px;
 `
 
 
-export const EsqueciText  = styled.p`
+export const SubText  = styled.p`
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 19px;
-
-    color: #E5E044;
 ` 
 
-export const CriarText =  styled.a`
+export const Link =  styled.a`
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;

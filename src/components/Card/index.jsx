@@ -13,7 +13,7 @@ import {
 const Card = () => {
   return (
     <CardContainer>
-      <ImageBackground />
+      <ImageBackground src='https://miro.medium.com/max/1400/1*2xsLeLNqKwIoGOQlw8O6Ug.png' />
       <Content>
         <UserInfo>
           <UserPicture src='https://avatars.githubusercontent.com/u/112978343?v=4' />

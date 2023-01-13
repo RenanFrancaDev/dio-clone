@@ -7,7 +7,7 @@ const UserInfo = ({nome,image, percentual}) => {
     <Container>
         <UserPicture src={image} />
         <div>
-            <NameText>{nome}</NameText>
+            <NameText>{nome}</NameText> 
             <Progress percentual={percentual} />
         </div>
     </Container>
