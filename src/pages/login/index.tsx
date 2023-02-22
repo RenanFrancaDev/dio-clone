@@ -30,12 +30,17 @@ const Login = () => {
             const onSubmit = async (formData: IFormData) => {
 
                 try{
-                    console.log(formData.email)
-                    console.log(formData);
+                    // console.log(formData.email)
+                    // console.log(formData);
                     const {data} = await api.get(`users?email=${formData.email}&senha=${formData.password}`);
                     console.log(data);
+                    console.log('ERRO')
                     if(data.length === 1){
+                        console.log('ERRO')
                         navigate('/feed')
+                    } else{
+                        console.log('ERRO')
+                        alert('ERROR, login ou senha inválida')
                     }
                 }catch{
                     alert('ERROR, favor comunicar ao suporte')

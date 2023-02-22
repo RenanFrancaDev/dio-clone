@@ -2,6 +2,7 @@ import React from 'react'
 import { Card } from '../../components/Card';
 import { UserInfo } from '../../components/UserInfo';
 
+
 import { Header } from '../../components/Header';
 
 import { Container, Column, Title, TitleHighlight } from './styles';
@@ -13,16 +14,8 @@ const Feed = () => {
         <Container>
             <Column flex={3}>
                 <Title>Feed</Title>
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
+                <Card src="https://marquesfernandes.com/wp-content/uploads/2020/01/1555172.jpg" />
+                <Card src="https://internalblog.natahouse.com/wp-content/uploads/2021/08/7-1.png" />
             </Column>
             <Column flex={1}>
               <TitleHighlight> # RANKING 5 TOP DA SEMANA </TitleHighlight>

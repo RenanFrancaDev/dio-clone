@@ -1,5 +1,6 @@
 import { FiThumbsUp } from 'react-icons/fi'
 import React from 'react'
+import { ICard } from './types'
 
 import { 
   CardContainer,
@@ -10,10 +11,10 @@ import {
   PostInfo,
   HasInfo,
 } from './styles'
-const Card = () => {
+const Card = ({src}: ICard) => {
   return (
     <CardContainer>
-      <ImageBackground src='https://miro.medium.com/max/1400/1*2xsLeLNqKwIoGOQlw8O6Ug.png' />
+      <ImageBackground src={src} />
       <Content>
         <UserInfo>
           <UserPicture src='https://avatars.githubusercontent.com/u/112978343?v=4' />
