@@ -1,5 +1,18 @@
 # Clone - Digital Innovation One
 
+## INICIANDO:
+
+node: -v: 16.18.0
+
+### API: Json Server:
+name: db.json
+
+Add "api": "json-server --watch db.json -p 8001" no packge.json, dentro de "scripts"
+Start: 
+```
+npm api
+```
+
 
 ## 💻 Sobre:
 
@@ -28,5 +41,6 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 - HTML5
 - CSS3
 - JavaScript
-- React.js
-
+- Node: Json Server
+- React.js: styled-components, axios.
+- TypeScript
